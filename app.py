@@ -1,7 +1,8 @@
 from flask import Flask, render_template, request
 from werkzeug import secure_filename
 
-from myocr import ocr
+#from myocr import ocr
+from src.processor import process
 
 app = Flask(__name__)
 
@@ -15,7 +16,7 @@ def upload_fileg():
       f = request.files['file']
       fname= secure_filename(f.filename)
       f.save("imgs/"+fname)
-      text= ocr(fname) 
+      text= process("imgs/"+fname) 
       return text
 		
 if __name__ == '__main__':
