@@ -1,5 +1,7 @@
-import pytesseract
+import os
 
-
-def ocr(img):
-    return pytesseract.image_to_string(img)
+def ocr(imgname):
+    myCmd = os.popen('Tesseract-OCR\\tesseract imgs/{} out'.format(imgname)).read()
+    outfile= open("out.txt")
+    data= outfile.read()
+    return data 

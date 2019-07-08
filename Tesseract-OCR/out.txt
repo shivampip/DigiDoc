@@ -1,0 +1,20 @@
+    <id type="integer">1098</id>
+    <created-at type="dateTime">2019-07-07T23:05:18-07:00</created-at>
+    <updated-at type="dateTime">2019-07-07T23:06:37-07:00</updated-at>
+    <buyer-note nil="true"/>
+    <justification></justification>
+    <need-by-date nil="true"/>
+    <reject-reason-comment nil="true"/>
+    <status>draft</status>
+    <price-hidden type="boolean">false</price-hidden>
+    <submitted-at nil="true"/>
+    <exported type="boolean">false</exported>
+    <ship-to-attention>SSC.LTIAPAC@larsentoubro.com</ship-to-attention>
+    <receiving-warehouse-id nil="true"/>
+    <line-count type="integer">1</line-count>
+    <total type="decimal">34234324.00</total>
+    <mobile-total type="decimal">34234324.00</mobile-total>
+	
+
+	
+	
