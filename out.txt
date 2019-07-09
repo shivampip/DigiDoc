@@ -1,24 +1,44 @@
-ADVERTISEMENT.
+43 ACCHASING ANU MANEDULALING PIXELS
 
-Tus publication of the Works of Joan Knox, it is
-supposed, will extend to Five Volumes. It was thought
-advisable to commence the series with his History of
-the Reformation in Scotland, as the work of greatest
-importance. The next volume will thus contain the
-Third and Fourth Books, which continue the History to
-the year 1564; at which period his historical labours
-may be considered to terminate. But the Fifth Book,
-forming a sequel to the History, and published under
-his name in 1644, will also be included. His Letters
-and Miscellaneous Writings will be arranged in the
-subsequent volumes, as nearly as possible in chronolo-
-gical order ; each portion being introduced by a separate
-notice, respecting the manuscript or printed copies from
-which they have been taken.
+On Line 44 we manipulate the top-left pixel in the im
+age, which i located at cuordinate (0,0) anid swt it to have
+avalue of (0, 0, 286), If we wer reading this pixel value
+in RGB format, we would have a value of O for rel, 0 for
+Wl abn for blue, thus makiny, it pure blue color
 
-It may perhaps be expected that a Life of the Author
-should have been prefixed to this volume. The Life of
-Knox, by Dr. M‘Crig, is however a work so universally
-known, and of so much historical value, as to supersede
-any attempt that might be made for a detailed bio-
+ 
+
+    
+
+ 
+
+a2 I mentioned above, we nen to take special
+care when working with OpenCY, Our pixels are actually
+Stoned in BCR format, aot RGB format
+
+We actually read this pixel ws 255 for red, 0 for green, and.
+0 for blue, making it « rel cole, not a blue color.
+
+Alter setting the top left pixel to have a red color on Line
+a4, we then grab the pixel value and print it back to con
+sole on Lines 15 und 16, just to demonstrate that we have
+indeed successfully changed the color of the pixel.
+
+Accessing and setting, a single pixel value is simple enough,
+but what if we wanted lo use NumPy’s weray slicinp, capa-
+bilities to access larger rectangular portions of the Image?
+The code below demonstrates how we can do this:
+
+4 sonar = saga {8:10 92205)
+ amngeto:s00, 0:4001 = co, 268.
+
+On line 47 we grab a 100 100 pixel region of the imaye.
+In fact, this is the top-left corner of the image! In order te
+grab chunks of an image, NumPy expects we provide tour
+
+ 
+
+ 
+
+  
 

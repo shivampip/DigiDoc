@@ -1,9 +1,8 @@
 import cv2
 import numpy as np
 import mapper
-from myocr import ocr
 
-image=cv2.imread("imgs/33.jpg")   #read in the image
+image=cv2.imread("imgs/page.jpg")   #read in the image
 image=cv2.resize(image,(1300,800)) #resizing because opencv does not work well with bigger images
 orig=image.copy()
 
@@ -29,6 +28,7 @@ for c in contours:
     if len(approx)==4:
         target=approx
         break
+        
 
 
 
@@ -39,11 +39,10 @@ pts=np.float32([[0,0],[800,0],[800,800],[0,800]])  #map to 800*800 target window
 op=cv2.getPerspectiveTransform(approx,pts)  #get the top or bird eye view effect
 dst=cv2.warpPerspective(orig,op,(800,800))
 
-text= ocr(blurred)
-print(text)
-exit()
 
 cv2.imshow("Scanned",dst)
+status= cv2.imwrite("static/imgs/nnn_extracted.jpg", dst)
+print("Status is {}".format(status))
 cv2.waitKey(0)
 
     

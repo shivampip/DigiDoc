@@ -11,14 +11,26 @@
 
 </head>
 
-<body bgcolor="#C0C0C0">
+<body>
 
     <div class="uk-card uk-card-default uk-card-body uk-width-1-2@m">
         <h3 class="uk-card-title">Summary</h3>
         <p>{{ data.summary }}</p>
     </div><br>
 
-    <img data-src="{{ data.img }}" width="280" height="" alt="" uk-img>
+
+    <div class="uk-card uk-card-default uk-card-body uk-width-1-2@m">
+        <h3 class="uk-card-title">Text</h3>
+        <p>{{ data.text }}</p>
+    </div><br>
+
+    <div class="uk-card uk-card-default uk-card-body uk-width-1-2@m">
+        <h3 class="uk-card-title">Keywords</h3>
+        <p>{{ data.keywords }}</p>
+    </div><br>
+
+    <img data-src="{{ data.outline_path }}" width="300" height="" alt="" uk-img>
+    <img data-src="{{ data.out_path }}" width="300" height="" alt="" uk-img>
     <br>
 
 
