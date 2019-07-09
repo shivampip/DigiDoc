@@ -15,9 +15,9 @@ def upload_fileg():
    if request.method == 'POST':
       f = request.files['file']
       fname= secure_filename(f.filename)
-      f.save("imgs/"+fname)
-      text= process("imgs/"+fname) 
-      return text
+      f.save("static/imgs/"+fname)
+      out= process("static/imgs/"+fname) 
+      return render_template("result.html", data= out ) 
 		
 if __name__ == '__main__':
    app.run(debug = True)

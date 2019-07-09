@@ -1,9 +1,33 @@
+<!DOCTYPE html>
 <html>
-   <body>
-      <form action = "http://localhost:5000/uploader" method = "POST" 
-         enctype = "multipart/form-data">
-         <input type = "file" name = "file" />
-         <input type = "submit"/>
-      </form>
-   </body>
+
+<head>
+    <title>Title</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/static/uikit/css/uikit.min.css" />
+    <script src="/static/uikit/js/uikit.min.js"></script>
+    <script src="/static/uikit/js/uikit-icons.min.js"></script>
+
+</head>
+<div uk-alert>DigiDoc convert image file into digital document.</div>
+<img src="/static/11.png">
+
+<form action="http://localhost:5000/uploader" method="POST" enctype="multipart/form-data">
+
+    <div class="uk-margin" uk-margin>
+        <div uk-form-custom="target: true">
+            <input type="file" name="file">
+            <input class="uk-input uk-form-width-medium" type="text" placeholder="Select file" disabled>
+        </div>
+        <button class="uk-button uk-button-default">Submit</button>
+    </div>
+
+</form>
+
+
+
+<body>
+</body>
+
 </html>

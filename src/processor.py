@@ -10,19 +10,15 @@ def addbr(text):
 
 
 def process(file_path):
-    out= ""
+    out= {}
 
     text= ocr(file_path)
-    out+= "## Extracted Text\n"
-    out+= addbr(text)+"\n"
+    out['text']= addbr(text)
 
-    out+= "## Summary\n"
-    out+= get_summary(text)+"\n"
+    out['summary']= get_summary(text)
 
-    out+= "## Keywords\n"
-    for word in get_keywords(text).split(" "):
-        out+= "* "+word+"\n"
-    out+= " :smile: "
+    out['keywords']= get_keywords(text)
+    
+    out['img']= file_path
 
-    out= md.convert(out) 
-    return "<center>"+out+"</center>"
+    return out

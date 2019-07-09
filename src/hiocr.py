@@ -1,8 +1,8 @@
-'''
+
 import os
 
 def ocr(imgname):
-    myCmd = os.popen('Tesseract-OCR\\tesseract imgs/{} out'.format(imgname)).read()
+    myCmd = os.popen('src\\Tesseract-OCR\\tesseract {} out'.format(imgname)).read()
     outfile= open("out.txt")
     data= outfile.read()
     return data 
@@ -24,3 +24,4 @@ def ocr(img):
     else:
         text= pytesseract.image_to_string(img) 
     return text 
+'''
