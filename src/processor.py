@@ -13,8 +13,8 @@ def addbr(text):
 def imgprocess(file_path):
     sc= Scanner(file_path)
     edged, image= sc.preprocess()
-    contours= sc.get_counters(edged)
-    target= sc.get_corners(contours)
+    contours= sc.get_contours(edged)
+    target= sc.get_best(contours)
     outline= sc.draw_contours(image, target)
     outline_path= sc.save(outline, "_outline")
 

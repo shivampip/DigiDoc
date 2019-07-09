@@ -11,28 +11,30 @@
 
 </head>
 
-<body>
+<body bgcolor="#f9f9f9">
+    <center>
+        <h1 class="uk-article-title">DigiDoc Results</h1>
+        <div class="uk-card uk-card-default uk-card-body uk-width-1-2@m">
+            <h3 class="uk-card-title">Summary</h3>
+            <p>{{ data.summary }}</p>
+        </div><br>
 
-    <div class="uk-card uk-card-default uk-card-body uk-width-1-2@m">
-        <h3 class="uk-card-title">Summary</h3>
-        <p>{{ data.summary }}</p>
-    </div><br>
 
+        <div class="uk-card uk-card-default uk-card-body uk-width-1-2@m">
+            <h3 class="uk-card-title">Text</h3>
+            <p>{{ data.text }}</p>
+        </div><br>
 
-    <div class="uk-card uk-card-default uk-card-body uk-width-1-2@m">
-        <h3 class="uk-card-title">Text</h3>
-        <p>{{ data.text }}</p>
-    </div><br>
+        <div class="uk-card uk-card-default uk-card-body uk-width-1-2@m">
+            <h3 class="uk-card-title">Keywords</h3>
+            <p>{{ data.keywords }}</p>
+        </div><br>
 
-    <div class="uk-card uk-card-default uk-card-body uk-width-1-2@m">
-        <h3 class="uk-card-title">Keywords</h3>
-        <p>{{ data.keywords }}</p>
-    </div><br>
+        <img data-src="{{ data.outline_path }}" width="300" height="" alt="" uk-img>
+        <img data-src="{{ data.out_path }}" width="300" height="" alt="" uk-img>
+        <br>
 
-    <img data-src="{{ data.outline_path }}" width="300" height="" alt="" uk-img>
-    <img data-src="{{ data.out_path }}" width="300" height="" alt="" uk-img>
-    <br>
-
+    </center>
 
 </body>
 

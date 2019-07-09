@@ -8,26 +8,33 @@
     <link rel="stylesheet" href="/static/uikit/css/uikit.min.css" />
     <script src="/static/uikit/js/uikit.min.js"></script>
     <script src="/static/uikit/js/uikit-icons.min.js"></script>
-
 </head>
-<div uk-alert>DigiDoc convert image file into digital document.</div>
-<img src="/static/11.png">
 
-<form action="http://localhost:5000/uploader" method="POST" enctype="multipart/form-data">
 
-    <div class="uk-margin" uk-margin>
-        <div uk-form-custom="target: true">
-            <input type="file" name="file">
-            <input class="uk-input uk-form-width-medium" type="text" placeholder="Select file" disabled>
+
+
+<body bgcolor="#f9f9f9">
+    <center><br><br><br>
+
+
+
+        <div class="uk-card uk-card-default uk-card-body uk-width-1-2@m">
+            <h3 class="uk-card-title">DigiDoc</h3>
+            <p>DigiDoc helps you in converting document images into Digital Documents</p>
+            <form action="http://localhost:5000/uploader" method="POST" enctype="multipart/form-data">
+                <div class="uk-margin" uk-margin>
+                    <div uk-form-custom="target: true">
+                        <input type="file" name="file">
+                        <input class="uk-input uk-form-width-medium" type="text" placeholder="Select file" disabled>
+                    </div>
+                    <button class="uk-button uk-button-default">Submit</button>
+                </div>
+            </form>
         </div>
-        <button class="uk-button uk-button-default">Submit</button>
-    </div>
-
-</form>
 
 
 
-<body>
+    </center>
 </body>
 
 </html>
