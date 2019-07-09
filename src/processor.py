@@ -31,7 +31,9 @@ def textprocess(file_path):
 
     out['summary']= get_summary(text)
 
-    out['keywords']= get_keywords(text)
+    keywords= get_keywords(text)
+    out['keywords_len']= len(keywords)
+    out['keywords']= keywords
     
     out['img']= file_path
 

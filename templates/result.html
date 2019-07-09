@@ -27,12 +27,47 @@
 
         <div class="uk-card uk-card-default uk-card-body uk-width-1-2@m">
             <h3 class="uk-card-title">Keywords</h3>
-            <p>{{ data.keywords }}</p>
-        </div><br>
+            <table class="uk-table">
+                <!--<table class="uk-table uk-table-striped">-->
+                <tbody>
+                    {% for i in range(0, data.keywords_len, 3) %}
+                    <tr>
+                        <td> {{ data.keywords[i] }} </td>
+                        <td> {{ data.keywords[i+1] }} </td>
+                        <td> {{ data.keywords[i+2] }} </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div><br><br>
 
-        <img data-src="{{ data.outline_path }}" width="300" height="" alt="" uk-img>
-        <img data-src="{{ data.out_path }}" width="300" height="" alt="" uk-img>
-        <br>
+
+
+        <div class="uk-card uk-card-default uk-width-1-2@m">
+            <div class="uk-card-media-top">
+                <img src="{{ data.outline_path }}" alt="">
+            </div>
+            <div class="uk-card-body">
+                <h3 class="uk-card-title">Identified Image</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+                </p>
+            </div>
+        </div><br><br>
+
+
+        <div class="uk-card uk-card-default uk-width-1-2@m">
+            <div class="uk-card-media-top">
+                <img src="{{ data.out_path }}" alt="">
+            </div>
+            <div class="uk-card-body">
+                <h3 class="uk-card-title">Final Image</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+                </p>
+            </div>
+        </div>
+
+
+        <br><br><br>
 
     </center>
 
