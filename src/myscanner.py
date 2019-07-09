@@ -21,8 +21,8 @@ class Scanner:
 
     def preprocess(self):
         w, h, _= self.image.shape
-        nh= 1000
-        nw= int((w/ h) * 1000)
+        nh= 1200
+        nw= int((w/ h) * 1200)
         self.image= cv2.resize(self.image, (nh, nw)) 
         self.orig= self.image.copy()
         self.gray= cv2.cvtColor(self.image, cv2.COLOR_BGR2RGB)
@@ -92,8 +92,8 @@ class Scanner:
         approx= mapp(target)
         print("Points are {}".format(approx))
 
-        nh= 800
-        nw= int((self.width/ self.height) * 800)
+        nh= 1200
+        nw= int((self.width/ self.height) * 1200)
         pts=np.float32([[0,0],[nh,0],[nh,nw],[0,nw]])
         op=cv2.getPerspectiveTransform(approx,pts) 
         final=cv2.warpPerspective(image,op,(nh,nw))

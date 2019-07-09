@@ -1,8 +1,8 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, send_file
 from werkzeug import secure_filename
 
 #from myocr import ocr
-from src.processor import process
+from src.processor import process, get_pdf
 
 app = Flask(__name__)
 
@@ -19,5 +19,15 @@ def upload_fileg():
       out= process("static/imgs/"+fname) 
       return render_template("result.html", data= out ) 
 		
+
+@app.route('/pdf_downloader', methods = ['GET', 'POST'])
+def download_pdf():
+   #return "<h3>Hello World</h3>"
+   fname= request.form['fname'] 
+   outfile= get_pdf(fname)
+   return send_file(outfile, as_attachment=True)
+
+
 if __name__ == '__main__':
    app.run(debug = True)
+

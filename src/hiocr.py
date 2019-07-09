@@ -22,3 +22,11 @@ def ocr(imgname):
         else:
             text= pytesseract.image_to_string(imgname) 
         return text 
+
+
+def ocrpdf(imgname):
+    data= pytesseract.image_to_pdf_or_hocr(imgname, extension='pdf')
+    f = open("out.pdf", "w+b")
+    f.write(bytearray(data))
+    f.close()
+    return f.name

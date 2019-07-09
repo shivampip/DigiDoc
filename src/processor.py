@@ -1,4 +1,4 @@
-from .hiocr import ocr 
+from .hiocr import ocr, ocrpdf
 from .summarizer import get_keywords, get_summary
 from markdown2 import Markdown
 from .myscanner import Scanner
@@ -26,7 +26,8 @@ def textprocess(file_path):
     out= {}
 
     text= ocr(file_path)
-    out['text']= addbr(text)
+    out['file_path']= file_path
+    out['html']= addbr(text)
     out['text']= text 
 
     out['summary']= get_summary(text)
@@ -45,3 +46,7 @@ def process(file_path):
     output['outline_path']= outline
     output['out_path']= out 
     return output
+
+
+def get_pdf(file_path):
+    return ocrpdf(file_path)
