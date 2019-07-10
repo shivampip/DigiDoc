@@ -1,44 +1,83 @@
-43 ACCHASING ANU MANEDULALING PIXELS
+pAs
 
-On Line 44 we manipulate the top-left pixel in the im
-age, which i located at cuordinate (0,0) anid swt it to have
-avalue of (0, 0, 286), If we wer reading this pixel value
-in RGB format, we would have a value of O for rel, 0 for
-Wl abn for blue, thus makiny, it pure blue color
+Goverment nda AADHAAR
 
- 
+wr
+8 TER TEI ST AMT 8, aR aT Ae |
+we OSG OT FATT SHCrgT SSSA SRT ITE HR |
+wi OG WH Seta a GHA SRT SAT SH TA 8 |
 
-    
+INFORMATION
+= Aadhaar is a proof of identity, not of citizenship.
+: = To establish identity, authenticate online.
+Shivam Agrawal
 
- 
+S/O Dinesh Kumar Agrwal 8 This is electronically generated letter.
+Makan N 31
 
-a2 I mentioned above, we nen to take special
-care when working with OpenCY, Our pixels are actually
-Stoned in BCR format, aot RGB format
+Teh-pipariya
 
-We actually read this pixel ws 255 for red, 0 for green, and.
-0 for blue, making it « rel cole, not a blue color.
+Ward N17
 
-Alter setting the top left pixel to have a red color on Line
-a4, we then grab the pixel value and print it back to con
-sole on Lines 15 und 16, just to demonstrate that we have
-indeed successfully changed the color of the pixel.
+Sandiya Road
 
-Accessing and setting, a single pixel value is simple enough,
-but what if we wanted lo use NumPy’s weray slicinp, capa-
-bilities to access larger rectangular portions of the Image?
-The code below demonstrates how we can do this:
+Pipariya
 
-4 sonar = saga {8:10 92205)
- amngeto:s00, 0:4001 = co, 268.
+Hoshangabad Madhya Pradesh - 461775
+8871830420 wm aru sfacy a aeart ait tara Barsit
 
-On line 47 we grab a 100 100 pixel region of the imaye.
-In fact, this is the top-left corner of the image! In order te
-grab chunks of an image, NumPy expects we provide tour
+aT ost Sort A saat er |
+® Aadhaar is valid throughout the country .
+
+® Aadhaar will be helpful in availing Government
+and Non-Government services in future .
 
  
 
+wun ae ae A Aer e |
+
+6tOzIe0I6z :218a peojumoa
+
  
 
-  
+ 
+
+ 
+
+°
+i
+a
+5
+z
+g
+g
+g
+
+yderBoroyd yam Epo HO
+
+HTTHT 31x wHaATH / Your Aadhaar No. :
+
+2521 4613 1830
+
+VID : 9116 1397 13115781
+
+To
+S FP Se, Ta FO 7139, Tea,
+Shivam Agrawal Pe a a 40, Raker, , BRITA,
+
+W FR/DOB: 30/12/1996 Hey Weal - 461775
+
+ey MALE Address:
+S/O Dinesh Kumar Agrwal, Makan N 31,
+Teh-pipariya, Sandiya Road, Ward N 17,
+Pipariya, Hoshangabad,
+Madhya Pradesh - 461775
+
+ydeBoroy d WWM epOD HO.
+
+2521 4613 1830 2521 4613 1830
+
+VID 9116 1397 13115781 ViD ; 9116 1397 1311 5781
+
+ 
 

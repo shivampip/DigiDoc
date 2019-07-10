@@ -13,7 +13,7 @@ if(sys.platform!= 'win32'):
 def ocr(imgname):
     if(sys.platform=='win32'):
         myCmd = os.popen('src\\Tesseract-OCR\\tesseract {} out'.format(imgname)).read()
-        outfile= open("out.txt")
+        outfile= open("out.txt", encoding="utf8")
         data= outfile.read()
         return data 
     else:
