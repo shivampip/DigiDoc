@@ -12,6 +12,6 @@
 
 ### Specific use cases
 
-![annotation](/imgs/raw/annotation.png)
+![annotation](https://github.com/shivampip/DigiDoc/raw/master/imgs/raw/annotation.png)
 
-![mapping](/imgs/raw/extration.png)
+![mapping](https://github.com/shivampip/DigiDoc/raw/master/imgs/raw/extration.png)
