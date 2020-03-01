@@ -7,9 +7,12 @@ RUN apt update
 RUN apt install tesseract-ocr -y
 RUN apt install libtesseract-dev -y
 
-RUN pip install -r /opt/digidoc/requirements.txt
 
 
 COPY . /opt/digidoc/
+
+
+RUN pip install -r /opt/digidoc/requirements.txt
+
 
 ENTRYPOINT python /opt/digidoc/app.py 

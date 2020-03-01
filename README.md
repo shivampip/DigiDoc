@@ -2,13 +2,12 @@
 
 ### General use cases
 
-* Making paper documents searchable
-* Modifying in digital form
-* Making copy from image
-* Get summary of large photo document
-* Non appropriate content detection
-* Different type of entity extration
-
+-   Making paper documents searchable
+-   Modifying in digital form
+-   Making copy from image
+-   Get summary of large photo document
+-   Different type of entity extration
+-   Keyword extraction
 
 ### Specific use cases
 
