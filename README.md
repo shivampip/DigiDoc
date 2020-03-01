@@ -16,7 +16,7 @@
 ```
 docker pull shivampip/digidoc
 ```
-* Run server 
+* Run the container 
 ```
 docker run -d -p 5000:5000 shivampip/digidoc
 ```
