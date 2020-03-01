@@ -1,7 +1,6 @@
 appdirs==1.4.3
 asgiref==3.2.3
 attrs==19.3.0
-black==19.10b0
 boto==2.49.0
 boto3==1.12.11
 botocore==1.15.11
