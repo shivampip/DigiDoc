@@ -9,7 +9,19 @@
 -   Different type of entity extration
 -   Keyword extraction
 
-### Specific use cases
+### Installation
+
+* Install [Docker](https://docs.docker.com/install/)
+* Pull `shivampip/digidoc` docker image
+```
+docker pull shivampip/digidoc
+```
+* Run server 
+```
+docker run -d -p 5000:5000 shivampip/digidoc
+```
+
+* Open [localhost:5000](http://localhost:5000) in browser. (in case of remote server, use server ip)
 
 ![annotation](https://github.com/shivampip/DigiDoc/raw/master/imgs/raw/annotation.png)
 
