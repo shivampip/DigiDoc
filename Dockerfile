@@ -6,7 +6,7 @@ RUN apt install -y python3 python3-pip
 RUN apt update
 RUN apt install tesseract-ocr -y
 RUN apt install libtesseract-dev -y
-RUN apt-get install python-opencv -y
+RUN apt-get install -y libsm6 libxext6 libxrender-dev
 
 RUN pip3 install -U pip 
 
