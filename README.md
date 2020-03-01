@@ -23,6 +23,9 @@ docker run -d -p 5000:5000 shivampip/digidoc
 
 * Open [localhost:5000](http://localhost:5000) in browser. (in case of remote server, use server ip)
 
-![annotation](https://github.com/shivampip/DigiDoc/raw/master/imgs/raw/annotation.png)
+### Screenshots
 
-![mapping](https://github.com/shivampip/DigiDoc/raw/master/imgs/raw/extration.png)
+![Home](/imgs/raw/11.png)
+![Text Extraction](/imgs/raw/22.png)
+![Doc identified](/imgs/raw/33.png)
+
