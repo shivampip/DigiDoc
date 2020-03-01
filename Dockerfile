@@ -15,5 +15,5 @@ COPY . /opt/digidoc/
 
 RUN pip3 install -r /opt/digidoc/requirements.txt
 
-
-ENTRYPOINT python3 /opt/digidoc/app.py 
+WORKDIR /opt/digidoc/
+ENTRYPOINT python3 app.py 
