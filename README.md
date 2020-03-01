@@ -25,7 +25,7 @@ docker run -d -p 5000:5000 shivampip/digidoc
 
 ### Screenshots
 
-![Home](/imgs/raw/11.png)
-![Text Extraction](/imgs/raw/22.png)
-![Doc identified](/imgs/raw/33.png)
+<img src="/imgs/raw/11.png" width="80%" placeholder="Home">
+<img src="/imgs/raw/22.png" width="80%" placeholder="Text Extraction">
+<img src="/imgs/raw/33.png" width="80%" placeholder="Doc Identified">
 
