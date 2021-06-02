@@ -14,7 +14,7 @@ idna==2.9
 itsdangerous==1.1.0
 Jinja2==2.11.1
 jmespath==0.9.5
-markdown2==2.3.8
+markdown2==2.4.0
 MarkupSafe==1.1.1
 numpy==1.18.1
 opencv-python==4.2.0.32
