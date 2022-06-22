@@ -16,7 +16,7 @@ Jinja2==2.11.1
 jmespath==0.9.5
 markdown2==2.3.8
 MarkupSafe==1.1.1
-numpy==1.18.1
+numpy==1.22.0
 opencv-python==4.2.0.32
 pathspec==0.7.0
 Pillow==7.0.0
